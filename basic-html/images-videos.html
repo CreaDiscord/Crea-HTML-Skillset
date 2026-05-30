@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images and Videos</title>
+</head>
+<body>
+    <header>
+        <p><a href="../index.html">Go back</a></p>
+        <h1>Images & Videos</h1>
+        <nav>
+            <ol>
+                <li><a href="#images-id">Images</a></li>
+                <li><a href="#figures-id">Figures</a></li>
+                <li><a href="#videos-id">Videos</a></li>
+            </ol>
+        </nav>
+    </header>
+    <hr>
+    <body>
+        <section id="images-id">
+            <h2>Images</h2>
+            <p>
+                Images are the pictures that are shown on a website.
+                <br> They are made with the <b>image</b> tag alongside a <b>src</b> and <b>alt</b> attribute for the image location and image description.
+                <br> Images also contain <b>width</b> & <b>height</b> attributes
+            </p>
+            <img 
+                src="https://picsum.photos/256/144?random=1" 
+                alt="A random photo from www.picsum.photos"
+                width="256"
+                height="144"
+            >
+        </section>
+        <hr>
+        <section id="figures-id">
+            <h2>Figures</h2>
+            <p>
+                Figures used to provide addition information or context to an image or video.
+                <br> Figures main tags are <b>figure</b>, nested between are an <b>image</b> tag and <b>figcaption</b> tags for the image description.
+            </p>
+            <figure>
+                <img 
+                    src="https://picsum.photos/256/144?random=2" 
+                    alt="A random photo from www.picsum.photos"
+                    width="256"
+                    height="144"
+                >
+                <figcaption>A random photo from <a href="https://picsum.photos">picsum.photos</a></figcaption>
+            </figure>
+        </section>
+        <hr>
+        <section id="videos-id">
+            <h2>Videos</h2>
+            <p>
+                Videos are used to display videos on a website. 
+                <br> They are made with the <b>video</b> tag. Unlike images, videos often have a few <b>source</b> tags nested inside.
+                <br> Video tags hold the <b>controls</b>, <b>autoplay</b>, <b>muted</b>, <b>width</b> & <b>height</b> and a <b>poster</b> attribute to display an image.
+                <br> The source tags hold the <b>src</b> attribute, along side a <b>type="video/***"</b> to show the video format.
+            </p>
+            <figure>
+                <video 
+                    poster="https://picsum.photos/256/144?random=3"
+                    width="256"
+                    height="144"
+                    controls
+                    autoplay
+                    loop
+                    muted
+                >
+                    <source src="" type="video/mp4">
+                    <source src="" type="video/WebM">
+                    <source src="" type="video/OGG">
+                </video>
+                <figcaption>src is empty so nothing will load.</figcaption>
+            </figure>
+        </section>
+        <hr>
+        <section>
+            <h2>iFrames</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur excepturi error tenetur consequatur esse beatae, iure incidunt culpa nemo? Illum molestias ipsa quo quidem. Facere animi deleniti quisquam magnam cumque?
+            </p>
+            <figure>
+                <figcaption>Youtube embed iFrame example</figcaption>
+                <iframe 
+                    src="https://youtube.com/embed/I0_951_MPE0" 
+                    frameborder="0"
+                    width="256"
+                        height="144"
+                    allowfullscreen
+                >
+                </iframe>
+            </figure>
+            <figure>
+                <figcaption>Website embed example</figcaption>
+                <iframe 
+                    src="./basics-formating.html" 
+                    frameborder="0"
+                    width="256"
+                        height="144"
+                >
+                </iframe>
+            </figure>
+        </section>
+    </body>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
