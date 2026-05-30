@@ -12,7 +12,72 @@
     </header>
     <hr>
     <main>
-
+        <section>
+            <h2>Tables</h2>
+            <p>
+                Tables are used to display data on a website.
+                <br> They are made using a collection of nested tags as followed:
+            </p>    
+             <dl>
+                <dt><b>table</b></dt>
+                    <dd>Declares a the table and structure.</dd>
+                <dt><b>caption</b></dt>
+                    <dd>Adds a title for the table, nested in table.</dd>
+                <dt><b>thead</b></dt>
+                    <dd>The head section of the table, nested intsble.</dd>
+                <dt><b>tbody</b></dt>
+                    <dd>The body section of the table, nested in table.</dd>
+                <dt><b>tfoot</b></dt>
+                    <dd>The footer of the table, nested in table.</dd>
+                <dt><b>tr</b></dt>
+                    <dd>Creates the rows in the tables, nested in thead, tbody and tfoot.</dd>
+                <dt><b>th</b></dt>
+                    <dd>Creates hraders for your rows/columns, nested in tr.</dd>
+                <dt><b>td</b></dt>
+                    <dd>Creates the data in your rows/colums, nested in tbody and tfoot.</dd>
+            </dl>
+            <p>
+                th & td both take the <b>colspan</b> & <b>rowspan</b> attribute.
+            </p>
+            <table>
+                <caption>Example Emails Table</caption>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Birth</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>001</th>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john.doe@mail.com</td>
+                        <td>10/05/1995</td>
+                    </tr>
+                    <tr>
+                        <th>002</th>
+                        <td>Jane</td>
+                        <td>Dow</td>
+                        <td>jonedow1@mail.com</td>
+                        <td>05/10/1998</td>
+                    </tr>
+                    <tr>
+                        <th>003</th>
+                        <td>Steve</td>
+                        <td>Cook</td>
+                        <td>steven.c02@mail.com</td>
+                        <td>08/04/2002</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td colspan="5">Total users : 3</td>
+                </tfoot>
+            </table>
+        </section>
     </main>
 </body>
 </html>
