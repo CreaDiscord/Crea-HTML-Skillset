@@ -3,16 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tables & Semantics</title>
+    <title>Lists & Tables</title>
 </head>
 <body>
     <header>
-        <p><a href="../index.html">Go back</a></p>
-        <h1>Tables & Semantics</h1>
+        <h1>Lists & Tables</h1>
+        <nav>
+            <ol>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#lists-id">Lists</a></li>
+                <li><a href="#tables-id">Tables</a></li>
+            </ol>
+        </nav>
     </header>
     <hr>
     <main>
-        <section>
+        <section id="lists-id">
+            <h2>Lists</h2>
+            <p>
+                There are 3 types of list in HTML each one serving a slightly different function or purpose to the other.
+            </p>
+            <dl>
+                <dt>[detailed list]</dt>
+                    <dd>Made with <b>dl</b> tags followed by repeating <b>dt</b> & <b>dd</b> tags for the title and details of the list item.</dd>
+                <dt>unordered list</dt>
+                    <dd>Made with <b>ul</b> tags followed by <b>li</b> tags for each item.</dd>
+                <dt>ordered list</dt>
+                    <dd>Made with <b>ol</b> tags followed by <b>li</b> tags for each item.</dd>
+            </dl>
+            <ul>
+                <li>detailed list</li>
+                <li>[unordered list]</li>
+                <li>ordered list</li>
+            </ul>
+            <ol>
+                <li>detailed list</li>
+                <li>unordered list</li>
+                <li>[ordered list]</li>
+            </ol>
+        </section>
+        <hr>
+        <section id="tables-id">
             <h2>Tables</h2>
             <p>
                 Tables are used to display data on a website.

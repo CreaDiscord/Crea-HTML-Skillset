@@ -7,10 +7,10 @@
 </head>
 <body>
     <header>
-        <p><a href="../index.html">Go back</a></p>
         <h1>Images & Videos</h1>
         <nav>
             <ol>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="#images-id">Images</a></li>
                 <li><a href="#figures-id">Figures</a></li>
                 <li><a href="#videos-id">Videos</a></li>
@@ -27,10 +27,10 @@
                 <br> Images also contain <b>width</b> & <b>height</b> attributes
             </p>
             <img 
-                src="https://picsum.photos/256/144?random=1" 
+                src="https://picsum.photos/427/240?random=1" 
                 alt="A random photo from www.picsum.photos"
-                width="256"
-                height="144"
+                width="427"
+                height="240"
             >
         </section>
         <hr>
@@ -42,10 +42,10 @@
             </p>
             <figure>
                 <img 
-                    src="https://picsum.photos/256/144?random=2" 
+                    src="https://picsum.photos/427/240?random=2" 
                     alt="A random photo from www.picsum.photos"
-                    width="256"
-                    height="144"
+                    width="427"
+                    height="240"
                 >
                 <figcaption>A random photo from <a href="https://picsum.photos">picsum.photos</a></figcaption>
             </figure>
@@ -56,14 +56,14 @@
             <p>
                 Videos are used to display videos on a website. 
                 <br> They are made with the <b>video</b> tag. Unlike images, videos often have a few <b>source</b> tags nested inside.
-                <br> Video tags hold the <b>controls</b>, <b>autoplay</b>, <b>muted</b>, <b>width</b> & <b>height</b> and a <b>poster</b> attribute to display an image.
+                <br> Video tags hold the <b>controls</b>, <b>autoplay</b>, <b>loop</b>, <b>muted</b>, <b>width</b> & <b>height</b> and a <b>poster</b> attribute to display an image.
                 <br> The source tags hold the <b>src</b> attribute, along side a <b>type="video/***"</b> to show the video format.
             </p>
             <figure>
                 <video 
-                    poster="https://picsum.photos/256/144?random=3"
-                    width="256"
-                    height="144"
+                    poster="https://picsum.photos/427/240?random=3"
+                    width="427"
+                    height="240"
                     controls
                     autoplay
                     loop
@@ -73,6 +73,27 @@
                     <source src="" type="video/WebM">
                     <source src="" type="video/OGG">
                 </video>
+                <figcaption>src is empty so nothing will load.</figcaption>
+            </figure>
+        </section>
+        <hr>    
+        <section>
+            <h2>Audio</h2>
+            <p>
+                Audio is used to play music and other sound effects on a website. They work similarly to video tags but are slightly different.
+                <br> They are made with the <b>audio</b> tag. Like video, they have a few <b>source</b> tags nested inside holding a <b>type="audio/***"</b>.
+                <br> Audio also takes the <b>controls</b>, <b>loop</b>, <b>autoplay</b> and <b>muted</b> attributes.
+            </p>
+            <figure>
+                <audio
+                    controls
+                    autoplay
+                    loop
+                    muted
+                >
+                    <source src="" type="audio/mp3">
+                    <source src="" type="audio/wav">
+                </audio>
                 <figcaption>src is empty so nothing will load.</figcaption>
             </figure>
         </section>
@@ -88,19 +109,20 @@
                 <iframe 
                     src="https://youtube.com/embed/I0_951_MPE0" 
                     frameborder="0"
-                    width="256"
-                        height="144"
+                    width="427"
+                    height="240"
                     allowfullscreen
                 >
                 </iframe>
             </figure>
+            <br>
             <figure>
                 <figcaption>Website embed example</figcaption>
                 <iframe 
                     src="./basics-formating.html" 
                     frameborder="0"
-                    width="256"
-                        height="144"
+                    width="427"
+                    height="240"
                 >
                 </iframe>
             </figure>
