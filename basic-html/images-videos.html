@@ -70,7 +70,7 @@
             <p> Videos are used to display videos on a website and should be a pair of nesting tags. </p>
             <article>
                 <h3><em>&lt;video&gt;</em> - Video Element</h3>
-                <p> Unlike images, videos do not hold the video's URL / file location.</p>
+                <p> The video element does not hold the video's URL / file location, instead they go in the source element. </p>
                 <figure>
                     <video 
                         poster="https://picsum.photos/427/240?random=3"
@@ -100,7 +100,8 @@
             </article>
             <article>
                 <h3><em>&lt;source&gt;</em> - Source Element</h3>
-                <p> The source element holds the video URL / file location.</p>
+                <p> The source element holds the video URL / file location. </p>
+                <h4>Source Attributes</h4>
                 <ul>
                     <li><em>src=" "</em></li>
                     <li><em>type="video/ "</em></li>
@@ -110,58 +111,79 @@
         <hr>    
         <section id="audio-id">
             <h2>Audio</h2>
-            <p>
-                Audio is used to play music and other sound effects on a website. They work similarly to video tags but are slightly different.
-                <br> They are made with the <b>audio</b> tag. Like video, they have a few <b>source</b> tags nested inside holding a <b>type="audio/***"</b>.
-                <br> Audio also takes the <b>controls</b>, <b>loop</b>, <b>autoplay</b> and <b>muted</b> attributes.
-            </p>
-            <figure>
-                <audio
-                    controls
-                    autoplay
-                    loop
-                    muted
-                >
-                    <source src="" type="audio/mp3">
-                    <source src="" type="audio/wav">
-                </audio>
-                <figcaption>src is empty so nothing will load.</figcaption>
-            </figure>
+            <p> Audio is used to play music and other sound effects on a website. They work similarly to video elements. </p>
+            <article>
+                <h3><em>&lt;audio&gt;</em> - Audio Element</h3>
+                <p> The audio element does not hold the video's URL / file location, instead they go in the source element. </p>
+                <figure>
+                    <audio
+                        controls
+                        autoplay
+                        loop
+                        muted
+                    >
+                        <source src="" type="audio/mp3">
+                        <source src="" type="audio/wav">
+                    </audio>
+                    <figcaption>src is empty so nothing will load.</figcaption>
+                </figure>
+                <h4>Audio Attributes</h4>
+                <ul>
+                    <li><em>controls</em></li>
+                    <li><em>autoplay</em></li>
+                    <li><em>loop</em></li>
+                    <li><em>muted</em></li>
+                </ul>
+            </article>
+            <article>
+                <h3><em>&lt;source&gt;</em> - Source Element</h3>
+                <p> The source element holds the audio URL / file location. </p>
+                <h4>Source Attributes</h4>
+                <ul>
+                    <li><em>src=" "</em></li>
+                    <li><em>type="audio/ "</em></li>
+                </ul>
+            </article>
         </section>
         <hr>
         <section id="iframe-id">
             <h2>iFrames</h2>
-            <p>
-                iFrames are used to embed other webpages and external content.
-                <br> Created using the <b>iframe</b> tags they take the <b>src</b>, <b>width</b> & <b>height</b> attributes along side new <b>frameborder</b> and <b>allowfullscreen</b>.
-            </p>
-            <figure>
-                <figcaption>Youtube embed iFrame example</figcaption>
-                <iframe 
-                    src="https://youtube.com/embed/I0_951_MPE0" 
-                    frameborder="0"
-                    width="427"
-                    height="240"
-                    allowfullscreen
-                >
-                </iframe>
-            </figure>
-            <br>
-            <figure>
-                <figcaption>Website embed example</figcaption>
-                <iframe 
-                    src="./basics-formating.html" 
-                    frameborder="0"
-                    width="427"
-                    height="240"
-                >
-                </iframe>
-            </figure>
+            <p> iFrames are used to embed other webpages and external content. </p>
+            <article>
+                <h3><em>&lt;iframe&gt;</em> - iFrame Element</h3>
+                <p>iFrames have many uses, youtube videos and websites are just a couple examples.</p>
+                <figure>
+                    <iframe 
+                        src="https://youtube.com/embed/I0_951_MPE0" 
+                        frameborder="0"
+                        width="427"
+                        height="240"
+                        allowfullscreen
+                    >
+                    </iframe>
+                    <figcaption>Youtube embed iFrame example</figcaption>
+                </figure>
+                <br>
+                <figure>
+                    <iframe 
+                        src="../index.html" 
+                        frameborder="0"
+                        width="427"
+                        height="240"
+                    >
+                    </iframe>
+                    <figcaption>Website embed example</figcaption>
+                </figure>
+                <h4>iFrame Attributes</h4>
+                <ul>
+                    <li><em>src=" "</em></li>
+                    <li><em>width=" "</em></li>
+                    <li><em>height=" "</em></li>
+                    <li><em>frameborder=" "</em></li>
+                    <li><em>allowfullscreen</em></li>
+                </ul>
+            </article> 
         </section>
     </main>
-
-    <footer>
-        
-    </footer>
 </body>
 </html>
